@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Проверка безопасности — Мебельное ателье</title>
+    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+    <link rel="stylesheet" href="app/css/styles/pages/security-check.css?v=20260422-0400">
+  </head>
+  <body>
+    <main class="security-page">
+      <section class="security-shell" aria-labelledby="security-title">
+        <p class="security-domain" data-security-host>mebel-atelier.local</p>
+        <h1 class="security-title" id="security-title">Проверка безопасности</h1>
+        <p class="security-text">Подтвердите, что вы человек, чтобы открыть сайт мебельного ателье.</p>
+
+        <form class="security-card" data-security-form>
+          <label class="security-human">
+            <input class="security-checkbox" type="checkbox" data-security-checkbox>
+            <span class="security-checkmark" aria-hidden="true"></span>
+            <span class="security-human-text">Я человек</span>
+          </label>
+
+          <div class="security-instruction" data-security-message>Поставьте галочку, чтобы пройти проверку.</div>
+
+          <div class="security-brand" aria-label="Локальная проверка">
+            <span>МА</span>
+            <strong>PROTECT</strong>
+            <small>Локальная проверка</small>
+          </div>
+        </form>
+
+        <p class="security-note">Проверка помогает защитить форму заявок от автоматических запросов.</p>
+      </section>
+    </main>
+
+    <script src="app/js/security-check.js?v=20260422-0400"></script>
+  </body>
+</html>

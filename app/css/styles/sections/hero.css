@@ -1,0 +1,23 @@
+﻿.hero-section{position:relative;display:flex;align-items:center;min-height:100vh;padding-top:7.5rem;padding-bottom:5rem;overflow:hidden}
+.hero-media{position:absolute;inset:0;transform:translateY(0) scale(1.03);will-change:transform}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.32fr) minmax(360px,.58fr);gap:3.5rem;align-items:start;min-width:0;max-width:100%}
+.hero-copy{max-width:52rem;padding-block:2rem}
+.hero-kicker{margin-bottom:1.45rem;font-size:.82rem;font-weight:700;letter-spacing:.23em;text-transform:uppercase;color:#d3b394}
+.hero-title{margin-bottom:1.55rem;font-size:clamp(3.6rem,7vw,6.45rem);font-weight:600;line-height:.9;color:var(--background);max-width:13.2ch;text-wrap:balance;text-shadow:0 8px 24px rgba(20,14,11,.14)}
+.hero-text{margin-bottom:2.05rem;max-width:42rem;font-size:1.02rem;line-height:1.62;color:rgba(244,236,229,.84)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:1rem}
+.hero-feature-pill{position:relative;display:inline-flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-radius:1rem;border:1px solid rgba(218,198,180,.16);background:rgba(70,46,32,.36);color:rgba(244,236,229,.92);backdrop-filter:blur(10px);overflow:hidden;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.hero-feature-pill svg{width:1rem;height:1rem;flex-shrink:0;color:rgba(220,193,165,.92)}
+.hero-feature-pill span{font-size:.96rem;font-weight:500;line-height:1.4}
+.hero-feature-pill::after{content:"";position:absolute;inset:-120% auto -120% -35%;width:44%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transform:rotate(16deg) translateX(-240%);transition:transform .7s ease}
+.hero-feature-pill:hover{transform:translateY(-3px);border-color:rgba(226,197,171,.28);box-shadow:0 18px 30px rgba(28,18,13,.16)}
+.hero-feature-pill:hover::after{transform:rotate(16deg) translateX(460%)}
+.hero-form-card{position:relative;align-self:start;justify-self:end;display:flex;flex-direction:column;justify-content:flex-start;width:min(100%,27.6rem);height:auto;min-height:0;padding:1rem 1.08rem .78rem;border-radius:1.95rem;border:1px solid rgba(244,236,229,.16);background:linear-gradient(180deg,#b1835f,#966847);box-shadow:0 30px 68px rgba(24,16,12,.28),inset 0 1px 0 rgba(255,255,255,.14);overflow:hidden}
+.hero-form-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0) 32%,rgba(92,61,39,.1) 100%),url("../../../../assets/images/textures/wood-texture-form.jpg") center/cover no-repeat;opacity:.18;mix-blend-mode:soft-light;pointer-events:none}
+.hero-form-card::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at top left,rgba(255,255,255,.14),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.06),transparent 30%,rgba(111,76,51,.08) 100%);mix-blend-mode:screen;pointer-events:none}
+.hero-form-card>*{position:relative;z-index:1}
+.hero-form-kicker{margin-top:.22rem;margin-bottom:.65rem;font-size:.78rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:rgba(252,244,236,.92)}
+.hero-form-title{margin-bottom:.72rem;font-size:clamp(2.15rem,2.8vw,3rem);line-height:.92;color:#fff9f3}
+.hero-form-text{margin-bottom:.78rem;font-size:.94rem;line-height:1.52;color:rgba(255,247,240,.92)}
+
+

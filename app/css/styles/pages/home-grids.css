@@ -1,0 +1,50 @@
+#why-us .container > .grid,
+#portfolio .container > .grid,
+#materials .container > .grid,
+#reviews .container > .grid,
+footer .container > .grid{
+  display:grid;
+}
+
+#why-us .container > .grid,
+#portfolio .container > .grid,
+#materials .container > .grid:last-child,
+#reviews .container > .grid,
+footer .container > .grid{
+  grid-template-columns:minmax(0,1fr);
+}
+
+#materials .container > .grid:first-child,
+#contacts .container > .grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+}
+
+@media (min-width:640px){
+  #why-us .container > .grid,
+  #materials .container > .grid:last-child,
+  footer .container > .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (min-width:1024px){
+  #why-us .container > .grid{
+    grid-template-columns:repeat(5,minmax(0,1fr));
+  }
+
+  #portfolio .container > .grid,
+  #reviews .container > .grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+  #materials .container > .grid:first-child,
+  #contacts .container > .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  #materials .container > .grid:last-child,
+  footer .container > .grid{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+  }
+}

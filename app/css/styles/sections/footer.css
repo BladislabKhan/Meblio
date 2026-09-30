@@ -1,0 +1,28 @@
+footer .grid{
+  align-items:start;
+}
+
+footer .site-brand{
+  justify-content:flex-start;
+}
+
+footer ul{
+  display:grid;
+  gap:.5rem;
+}
+
+footer .footer-policy{
+  align-items:center;
+}
+
+@media (min-width:640px){
+  footer .sm\:grid-cols-2{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (min-width:1024px){
+  footer .lg\:grid-cols-4{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+  }
+}

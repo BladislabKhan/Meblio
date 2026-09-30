@@ -1,0 +1,17 @@
+{
+  "name": "Мебельное ателье",
+  "short_name": "MA",
+  "icons": [
+    {
+      "src": "assets/brand/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#211813",
+  "background_color": "#f4ece5",
+  "display": "standalone",
+  "lang": "ru",
+  "start_url": "./index.html"
+}

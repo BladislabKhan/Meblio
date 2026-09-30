@@ -1,0 +1,11 @@
+{
+  "name": "mebel-atelier-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static furniture atelier website with admin authentication and Cloudflare Pages functions.",
+  "scripts": {
+    "serve": "python -m http.server 8082 --bind 0.0.0.0",
+    "check:js": "node --check app/js/site-config.js && node --check app/js/site.js && node --check app/js/admin-login.js && node --check app/js/security-check.js"
+  },
+  "license": "MIT"
+}

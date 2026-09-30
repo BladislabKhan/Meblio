@@ -1,0 +1,18 @@
+* text=auto eol=lf
+
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+.dev.vars export-ignore
+.wrangler export-ignore
+node_modules export-ignore
+tmp export-ignore
+temp export-ignore
+*.log export-ignore

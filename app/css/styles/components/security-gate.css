@@ -1,0 +1,207 @@
+.security-gate[hidden]{
+  display:none!important;
+}
+
+.security-gate{
+  position:fixed;
+  inset:0;
+  z-index:999;
+  display:grid;
+  align-items:center;
+  padding:clamp(30px,7vw,72px);
+  background:
+    radial-gradient(circle at 18% 20%,rgba(193,129,74,.16),transparent 34%),
+    radial-gradient(circle at 92% 88%,rgba(122,84,63,.12),transparent 30%),
+    linear-gradient(180deg,#fffaf5 0%,#efe2d5 100%);
+  color:#3b2d24;
+}
+
+body.security-gate-open{
+  overflow:hidden;
+}
+
+.security-gate-shell{
+  width:min(100%,780px);
+}
+
+.security-gate-domain{
+  margin:0 0 54px;
+  color:#4a3023;
+  font-family:var(--font-serif);
+  font-size:clamp(42px,6.7vw,76px);
+  font-weight:700;
+  letter-spacing:-.04em;
+  line-height:.95;
+}
+
+.security-gate-title{
+  width:min(100%,440px);
+  margin:0 0 24px;
+  color:#4a3023;
+  font-family:var(--font-serif);
+  font-size:clamp(38px,5.2vw,58px);
+  line-height:1.02;
+}
+
+.security-gate-text{
+  width:min(100%,560px);
+  margin:0 0 46px;
+  color:rgba(59,45,36,.78);
+  font-family:var(--font-serif);
+  font-size:clamp(22px,3vw,34px);
+  line-height:1.32;
+}
+
+.security-gate-card{
+  display:grid;
+  grid-template-columns:minmax(180px,1fr) minmax(180px,1fr) auto;
+  gap:22px;
+  align-items:center;
+  width:min(100%,720px);
+  min-height:118px;
+  padding:24px;
+  border:1px solid rgba(122,84,63,.16);
+  border-radius:12px;
+  background:rgba(255,253,250,.94);
+  box-shadow:0 24px 60px rgba(75,53,40,.1);
+}
+
+.security-gate-human{
+  display:inline-grid;
+  grid-template-columns:40px auto;
+  gap:18px;
+  align-items:center;
+  cursor:pointer;
+}
+
+.security-gate-checkbox{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.security-gate-checkmark{
+  position:relative;
+  display:block;
+  width:38px;
+  height:38px;
+  border:2px solid #b8a393;
+  border-radius:7px;
+  background:#fff;
+  transition:border-color .2s ease,background-color .2s ease,box-shadow .2s ease;
+}
+
+.security-gate-checkmark::after{
+  content:"";
+  position:absolute;
+  left:11px;
+  top:5px;
+  width:11px;
+  height:21px;
+  border-right:3px solid #fff8f1;
+  border-bottom:3px solid #fff8f1;
+  opacity:0;
+  transform:rotate(42deg) scale(.75);
+  transition:opacity .2s ease,transform .2s ease;
+}
+
+.security-gate-checkbox:focus-visible + .security-gate-checkmark{
+  outline:3px solid rgba(193,129,74,.24);
+  outline-offset:3px;
+}
+
+.security-gate-checkbox:checked + .security-gate-checkmark{
+  border-color:#7a543f;
+  background:#7a543f;
+  box-shadow:0 10px 24px rgba(122,84,63,.18);
+}
+
+.security-gate-checkbox:checked + .security-gate-checkmark::after{
+  opacity:1;
+  transform:rotate(42deg) scale(1);
+}
+
+.security-gate-human-text{
+  color:#28414a;
+  font-size:18px;
+  font-weight:800;
+}
+
+.security-gate-message{
+  color:#4e5b60;
+  font-size:16px;
+  font-weight:800;
+  line-height:1.45;
+}
+
+.security-gate-card.is-passed .security-gate-message{
+  color:#6e4d38;
+}
+
+.security-gate-card.is-loading .security-gate-checkmark{
+  border-color:#c1814a;
+  border-top-color:transparent;
+  border-radius:999px;
+  animation:securityGateSpin .8s linear infinite;
+}
+
+.security-gate-card.is-loading .security-gate-checkmark::after{
+  opacity:0;
+}
+
+.security-gate-brand{
+  display:grid;
+  gap:4px;
+  justify-items:end;
+  min-width:110px;
+  color:#4a3023;
+  line-height:1;
+}
+
+.security-gate-brand span{
+  color:#c1814a;
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:.24em;
+}
+
+.security-gate-brand strong{
+  color:#4a3023;
+  font-size:23px;
+  letter-spacing:.34em;
+}
+
+.security-gate-brand small{
+  color:rgba(59,45,36,.64);
+  font-size:11px;
+}
+
+.security-gate-note{
+  margin:24px 0 0;
+  color:rgba(59,45,36,.54);
+  font-size:14px;
+}
+
+@keyframes securityGateSpin{
+  to{transform:rotate(360deg)}
+}
+
+@media (max-width:760px){
+  .security-gate{
+    padding:28px 18px;
+  }
+
+  .security-gate-domain{
+    margin-bottom:36px;
+    overflow-wrap:anywhere;
+  }
+
+  .security-gate-card{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .security-gate-brand{
+    justify-items:start;
+  }
+}

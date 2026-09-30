@@ -1,0 +1,22 @@
+﻿.dynamic-blocks{background:linear-gradient(180deg,rgba(246,239,232,.7),rgba(239,228,216,.92))}
+.dynamic-blocks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.dynamic-block-card{overflow:hidden;border:1px solid rgba(138,103,77,.12);border-radius:1.8rem;background:#fff9f4;box-shadow:0 24px 52px rgba(60,44,32,.1)}
+.dynamic-block-layout-split{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:stretch;min-width:0;max-width:100%}.dynamic-block-layout-split>*{min-width:0}
+.dynamic-block-layout-text{display:block}
+.dynamic-block-image-wrap{aspect-ratio:16/10;overflow:hidden}
+.dynamic-block-image{width:100%;height:100%;object-fit:cover}
+.dynamic-block-caption{padding:.65rem .85rem;background:rgba(255,249,244,.88);color:rgba(54,46,41,.58);font-size:.78rem;line-height:1.35}
+.dynamic-block-copy{padding:1.6rem}
+.dynamic-block-eyebrow{margin-bottom:.55rem;font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze)}
+.dynamic-block-title{margin-bottom:.8rem;font-size:1.7rem;line-height:1.2;color:var(--foreground)}
+.dynamic-block-subtitle{margin-bottom:.8rem;color:rgba(54,46,41,.62);font-size:1rem;line-height:1.6}
+.dynamic-block-text{color:rgba(54,46,41,.68);font-size:1rem;line-height:1.8}
+.dynamic-block-button{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;margin-top:1.3rem;padding:0 1.2rem;border-radius:1rem;background:#4b3528;color:#f7efe8;font-weight:600}
+.dynamic-blocks-dark .dynamic-block-card{background:#3f2d24;border-color:rgba(255,244,236,.08)}
+.dynamic-blocks-dark .dynamic-block-title,.dynamic-blocks-dark .dynamic-block-text,.dynamic-blocks-dark .dynamic-block-subtitle,.dynamic-blocks-dark .dynamic-block-eyebrow{color:#f7efe8}
+.dynamic-blocks-accent .dynamic-block-card{background:linear-gradient(135deg,#f1e0cf,#e6cfb8)}
+.dynamic-blocks-compact .dynamic-block-copy{padding:1.25rem}
+.dynamic-blocks-airy .dynamic-block-copy{padding:2rem}
+.dynamic-block-card:hover .dynamic-block-image,.group:hover img,.group:hover .overflow-hidden img{transform:scale(1.05);filter:saturate(1.04) contrast(1.03)}
+
+

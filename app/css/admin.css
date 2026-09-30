@@ -1,0 +1,17 @@
+@import url("styles/base/fonts.css");
+:root{--line:#d8c1ad;--text:#31251c;--accent:#7a4f34}
+*,:before,:after{box-sizing:border-box}
+body{margin:0;color:var(--text);font-family:"Inter Local","Segoe UI",Arial,sans-serif;background:radial-gradient(circle at top left,rgba(193,129,74,.16),transparent 25%),radial-gradient(circle at top right,rgba(122,79,52,.14),transparent 28%),linear-gradient(180deg,#f8f2ec,#efe5da);background-attachment:fixed}
+.auth-shell{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px}
+.auth-container{width:100%;display:grid;place-items:center}
+.auth-card{width:min(100%,460px);padding:34px 30px 28px;border-radius:32px;background:rgba(255,250,246,.9);border:1px solid rgba(129,96,72,.14);box-shadow:0 24px 60px rgba(69,45,31,.12);backdrop-filter:blur(12px)}
+.auth-title{margin:0 0 18px;text-align:center;font-size:clamp(28px,4vw,38px);line-height:1.04;font-family:"Merriweather Local",Georgia,serif}
+.stack{display:grid;gap:18px;margin-top:22px}
+.field{display:grid;gap:8px;min-width:0}
+.field span{font-size:14px;font-weight:600;color:#5f4b3e}
+.field input{width:100%;min-width:0;min-height:54px;padding:14px 16px;border:1px solid var(--line);border-radius:18px;background:#fffdfb;color:var(--text);font:inherit}
+.field input:focus{outline:2px solid rgba(111,74,53,.22);border-color:var(--accent)}
+.button{min-height:50px;padding:0 18px;border:0;border-radius:16px;font:inherit;font-weight:600;cursor:pointer}
+.button-primary{background:linear-gradient(180deg,#8b5b3d,#6f442c);color:#fff6ef;box-shadow:0 12px 28px rgba(95,57,37,.18)}
+.auth-feedback{margin-top:18px;min-height:24px;color:var(--accent);font-weight:600}
+@media(max-width:767px){.auth-shell{padding:10px}.auth-card{padding:18px;border-radius:20px}.stack{gap:14px;margin-top:16px}.field input{padding:12px 14px}}

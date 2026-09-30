@@ -1,0 +1,5 @@
+/security-check /security-check.html 200
+/403 /403.html 403
+/404 /404.html 404
+/500 /500.html 500
+/* /404.html 404

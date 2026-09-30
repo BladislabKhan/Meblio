@@ -1,0 +1,63 @@
+﻿/* Horizontal overflow guardrails */
+html,
+body{
+  overflow-x:hidden;
+  overflow-x:clip;
+}
+
+header,
+main,
+footer,
+main>section,
+.site-header-shell,
+.mobile-menu{
+  max-width:100%;
+  overflow-x:hidden;
+  overflow-x:clip;
+}
+
+img,
+video,
+iframe,
+canvas{
+  max-width:100%;
+  height:auto;
+}
+
+@media (max-width:1023.98px){
+  .header-eye-button::after{
+    display:none;
+  }
+}
+
+@media (max-width:767.98px){
+  .dynamic-blocks-grid{
+    grid-template-columns:minmax(0,1fr);
+  }
+
+  .footer-policy,
+  .site-header-actions{
+    min-width:0;
+    flex-wrap:wrap;
+  }
+
+  .mobile-nav-link,
+  .contact-link,
+  .footer-link,
+  .dynamic-block-title,
+  .dynamic-block-text,
+  .hero-text{
+    overflow-wrap:anywhere;
+    word-break:break-word;
+  }
+}
+
+@supports (content-visibility:auto){
+  main>section:not(.hero-section),
+  footer{
+    content-visibility:auto;
+    contain-intrinsic-size:1px 900px;
+  }
+}
+
+

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мебель на заказ премиум-класса</title>
+    <meta name="description" content="Кухни, шкафы, гардеробные и жилые зоны на заказ. Точная геометрия, продуманные материалы и аккуратный монтаж.">
+    <meta name="keywords" content="мебельная студия, мебель на заказ, кухни, шкафы, гардеробные, мебель по индивидуальным размерам">
+    <meta name="theme-color" content="#211813">
+    <meta property="og:title" content="Мебель на заказ премиум-класса">
+    <meta property="og:description" content="Тёплая интерьерная эстетика и мебель, спроектированная под ваш дом.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero/hero-kitchen.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script>
+      (function () {
+        document.documentElement.classList.add("site-loading");
+        if ("scrollRestoration" in history) {
+          history.scrollRestoration = "manual";
+        }
+        try {
+          if (sessionStorage.getItem("site-reload-to-top") === "1") {
+            sessionStorage.removeItem("site-reload-to-top");
+            window.scrollTo(0, 0);
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+    <link rel="shortcut icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/brand/favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="assets/images/hero/hero-kitchen.jpg" as="image" fetchpriority="high">
+    <link rel="preload" href="assets/fonts/merriweather-cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/merriweather-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-400.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="dns-prefetch" href="//api.qrserver.com">
+    <link rel="preconnect" href="https://api.qrserver.com" crossorigin>
+    <link rel="stylesheet" href="app/css/bootstrap-grid.css?v=20260422-0005">
+    <link rel="stylesheet" href="app/css/site.css?v=20260426-1200">
+  </head>
+  <body>
+    <div class="security-gate" data-home-security-gate hidden>
+      <section class="security-gate-shell" aria-labelledby="home-security-title">
+        <p class="security-gate-domain" data-home-security-host>localhost:8082</p>
+        <h1 class="security-gate-title" id="home-security-title">Проверка безопасности</h1>
+        <p class="security-gate-text">Подтвердите, что вы человек, чтобы открыть сайт.</p>
+
+        <form class="security-gate-card" data-home-security-form>
+          <label class="security-gate-human">
+            <input class="security-gate-checkbox" type="checkbox" data-home-security-checkbox>
+            <span class="security-gate-checkmark" aria-hidden="true"></span>
+            <span class="security-gate-human-text">Я человек</span>
+          </label>
+
+          <div class="security-gate-message" data-home-security-message>Поставьте галочку, чтобы пройти проверку.</div>
+
+          <div class="security-gate-brand" aria-label="Локальная проверка">
+            <span>МА</span>
+            <strong>PROTECT</strong>
+            <small>Локальная проверка</small>
+          </div>
+        </form>
+
+        <p class="security-gate-note">Проверка помогает защитить форму заявок от автоматических запросов.</p>
+      </section>
+    </div>
+
+    <header class="fixed top-0 left-0 right-0 z-50 site-header-shell">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="site-header-grid">
+          <a href="index.html" class="site-brand" aria-label="На главную" data-reload-home>
+            <span class="site-brand-badge" aria-hidden="true" data-brand-mark>МА</span>
+            <span class="site-brand-wordmark" data-brand-name>Мебельное ателье</span>
+          </a>
+
+          <nav class="site-nav" aria-label="Основная навигация" data-nav="desktop">
+            <a href="#why-us" class="site-nav-link">О компании</a>
+            <a href="#portfolio" class="site-nav-link">Портфолио</a>
+            <a href="#materials" class="site-nav-link">Материалы</a>
+            <a href="#how-we-work" class="site-nav-link">Этапы</a>
+            <a href="#reviews" class="site-nav-link">Отзывы</a>
+            <a href="#contacts" class="site-nav-link">Контакты</a>
+          </nav>
+
+          <div class="site-header-actions">
+            <button type="button" class="header-eye-button" aria-label="Версия для слабовидящих" data-tooltip="Версия для слабовидящих" data-vision-toggle>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/>
+                <circle cx="12" cy="12" r="3.2"/>
+              </svg>
+            </button>
+            <button type="button" class="p-2 text-graphite mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+              <svg class="icon-menu open-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+              <svg class="icon-menu close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <nav class="container mx-auto px-4 pt-4 flex flex-col gap-3 mobile-menu-nav" aria-label="Мобильная навигация" data-nav="mobile">
+          <a href="#why-us" class="mobile-nav-link">О компании</a>
+          <a href="#portfolio" class="mobile-nav-link">Портфолио</a>
+          <a href="#materials" class="mobile-nav-link">Материалы</a>
+          <a href="#how-we-work" class="mobile-nav-link">Этапы</a>
+          <a href="#reviews" class="mobile-nav-link">Отзывы</a>
+          <a href="#contacts" class="mobile-nav-link">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="hero" data-section="hero">
+        <div class="hero-media">
+          <img src="assets/images/hero/hero-kitchen.jpg" alt="Кухня из натурального дерева с каменной столешницей" class="w-full h-full object-cover" width="1920" height="1080" fetchpriority="high" decoding="async">
+          <div class="absolute inset-0 bg-gradient-to-r from-linen/95 via-linen/80 to-linen/40 hero-shade"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-8 hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">Мебельное ателье в Санкт-Петербурге</p>
+            <h1 class="hero-title">Мебель на заказ, которая делает дом цельным</h1>
+            <p class="hero-text">Создаём кухни, шкафы, гардеробные и жилые зоны так, чтобы мебель подчёркивала интерьер, а не спорила с ним.</p>
+            <div class="hero-actions">
+              <div class="hero-feature-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 18h10"/><path d="M8 18V8a4 4 0 0 1 8 0v10"/><path d="M9 18c0 1.1-.9 2-2 2s-2-.9-2-2 2-3 2-3 2 1.9 2 3Zm10 0c0 1.1-.9 2-2 2s-2-.9-2-2 2-3 2-3 2 1.9 2 3Z"/></svg>
+                <span>Бесплатный замер</span>
+              </div>
+              <div class="hero-feature-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="3.2"/></svg>
+                <span>Визуализация проекта</span>
+              </div>
+              <div class="hero-feature-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 18 4-4"/><path d="m14 10 4-4"/><path d="m14 6 4 4"/><path d="M8 20 4 16"/><path d="M11 7 17 13"/></svg>
+                <span>Монтаж под ключ</span>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-form-card">
+            <p class="hero-form-kicker">Рассчитать стоимость</p>
+            <h2 class="hero-form-title">Оставьте заявку</h2>
+            <p class="hero-form-text">Оставьте контакты, и мы вернёмся с понятной консультацией по проекту, срокам и следующему шагу.</p>
+            <form class="hero-form" action="#" method="post" novalidate>
+              <label class="hero-form-label">
+                <span class="hero-form-hidden">Ваше имя</span>
+                <input class="hero-input" type="text" name="name" placeholder="Ваше имя">
+              </label>
+              <label class="hero-form-label">
+                <span class="hero-form-hidden">Телефон</span>
+                <input class="hero-input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+              </label>
+              <div class="form-bot-trap" aria-hidden="true">
+                <label>
+                  <span>Оставьте это поле пустым</span>
+                  <input type="text" name="company" tabindex="-1" autocomplete="off">
+                </label>
+              </div>
+              <input type="hidden" name="startedAt" value="">
+              <label class="hero-form-consent">
+                <input type="checkbox" name="consent">
+                <span>Согласен на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a> и <a href="#">Пользовательским соглашением</a></span>
+              </label>
+              <div class="hero-turnstile-slot" data-turnstile-slot hidden></div><div class="hero-form-notes" data-consultation-notes></div>
+              <button type="submit" class="hero-submit-button">Отправить заявку</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+        <section id="why-us" data-section="why-us" class="relative z-10 py-24 lg:py-32 bg-espresso why-us-soft"><div class="container mx-auto px-4 lg:px-8"><div class="max-w-3xl mx-auto text-center mb-16 why-us-copy"><p class="text-camel text-sm tracking-[0.2em] uppercase mb-4 font-sans">Почему мы</p><h2 class="font-serif text-3xl lg:text-5xl font-semibold text-linen mb-8 why-us-title">Не подгоняем дом под мебель, а проектируем мебель под дом</h2><p class="text-sand/70 text-lg font-sans leading-relaxed why-us-description">Для нас важны не только размеры, но и свет, проходы, сценарии хранения, ритм фасадов и ощущение дома после установки.</p></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6"><div class="why-us-feature"><span class="why-us-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l3 3-3 3-3-3 3-3Z"/><path d="M6 12l3-3 3 3-3 3-3-3Zm6 0 3-3 3 3-3 3-3-3Zm-3 3 3 3-3 3-3-3 3-3Z"/></svg></span><p class="text-sand/90 text-sm font-sans leading-relaxed">Точные размеры и учёт всех ниш, коммуникаций и сложных углов</p></div><div class="why-us-feature"><span class="why-us-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20c4.418 0 8-2.91 8-6.5S16.418 7 12 7 4 9.91 4 13.5 7.582 20 12 20Z"/><path d="M8.5 11.5h7M8.5 15h4"/><path d="M10 7V5.5A2.5 2.5 0 0 1 12.5 3h0A2.5 2.5 0 0 1 15 5.5V7"/></svg></span><p class="text-sand/90 text-sm font-sans leading-relaxed">Подбор материалов под стиль интерьера и бюджет</p></div><div class="why-us-feature"><span class="why-us-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4.5" y="5" width="15" height="11" rx="1.8"/><path d="M9 19h6M12 16v3"/></svg></span><p class="text-sand/90 text-sm font-sans leading-relaxed">Честная визуализация до запуска в производство</p></div><div class="why-us-feature"><span class="why-us-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3.5 18 6v5c0 4.1-2.4 7-6 8.5-3.6-1.5-6-4.4-6-8.5V6l6-2.5Z"/></svg></span><p class="text-sand/90 text-sm font-sans leading-relaxed">Монтаж без ощущения строительного хаоса</p></div><div class="why-us-feature"><span class="why-us-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 4 2.1 4.3 4.7.7-3.4 3.3.8 4.7L12 14.8 7.8 17l.8-4.7L5.2 9l4.7-.7L12 4Z"/></svg></span><p class="text-sand/90 text-sm font-sans leading-relaxed">Мебель, которая выглядит дорого и служит спокойно</p></div></div><div class="why-us-categories"><p class="why-us-categories-label">Направления</p><div class="why-us-categories-grid"><span class="why-us-category">Кухни</span><span class="why-us-category">Шкафы и гардеробные</span><span class="why-us-category">Гостиные и ТВ-зоны</span><span class="why-us-category">Прихожие</span><span class="why-us-category">Детские</span><span class="why-us-category">Индивидуальные проекты</span></div></div></div></section>
+
+      <section id="portfolio" class="relative z-10 py-24 lg:py-32 bg-sand/30 section-soft-shadow"><div class="container mx-auto px-4 lg:px-8"><div class="text-center mb-16"><p class="text-bronze text-sm tracking-[0.2em] uppercase mb-4 font-sans">Портфолио</p><h2 class="font-serif text-3xl lg:text-5xl font-semibold text-graphite">Наши проекты</h2></div><div class="grid grid-cols-1 lg:grid-cols-3 gap-8"><div class="bg-linen border border-bronze/10 rounded-lg overflow-hidden group shadow-lg"><div class="aspect-[3/2] overflow-hidden"><img src="assets/images/portfolio/portfolio-1.jpg" alt="Кухня в тёплом минимализме" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div><div class="p-6 lg:p-8"><h3 class="font-serif text-xl font-semibold text-graphite mb-3">Кухня в тёплом минимализме</h3><div class="flex flex-wrap gap-2 mb-4"><span class="text-xs bg-sand/50 text-graphite/70 px-3 py-1 rounded-full font-sans">Квартира, 85 м²</span><span class="text-xs bg-sand/50 text-graphite/70 px-3 py-1 rounded-full font-sans">Тёплый минимализм</span></div><p class="text-graphite/60 text-sm font-sans leading-relaxed mb-3">Скрыли коммуникации, добавили пеналы до потолка и объединили столешницу с фартуком в единый ритм.</p><p class="text-camel text-xs font-sans">Шпон ореха, мрамор, фурнитура BLUM</p></div></div><div class="bg-linen border border-bronze/10 rounded-lg overflow-hidden group shadow-lg"><div class="aspect-[3/2] overflow-hidden"><img src="assets/images/portfolio/portfolio-2.jpg" alt="Гардеробная для всей семьи" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div><div class="p-6 lg:p-8"><h3 class="font-serif text-xl font-semibold text-graphite mb-3">Гардеробная для всей семьи</h3><div class="flex flex-wrap gap-2 mb-4"><span class="text-xs bg-sand/50 text-graphite/70 px-3 py-1 rounded-full font-sans">Частный дом</span><span class="text-xs bg-sand/50 text-graphite/70 px-3 py-1 rounded-full font-sans">Современная классика</span></div><p class="text-graphite/60 text-sm font-sans leading-relaxed mb-3">Организовали хранение для всей семьи без ощущения тесноты и визуальной тяжести.</p><p class="text-camel text-xs font-sans">МДФ в эмали, стекло, LED-подсветка</p></div></div><div class="bg-linen border border-bronze/10 rounded-lg overflow-hidden group shadow-lg"><div class="aspect-[3/2] overflow-hidden"><img src="assets/images/portfolio/portfolio-3.jpg" alt="Гостиная с камином и ТВ-зоной" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div><div class="p-6 lg:p-8"><h3 class="font-serif text-xl font-semibold text-graphite mb-3">Гостиная с камином и ТВ-зоной</h3><div class="flex flex-wrap gap-2 mb-4"><span class="text-xs bg-sand/50 text-graphite/70 px-3 py-1 rounded-full font-sans">Квартира, 120 м²</span><span class="text-xs bg-sand/50 text-graphite/70 px-3 py-1 rounded-full font-sans">Минимализм</span></div><p class="text-graphite/60 text-sm font-sans leading-relaxed mb-3">Собрали технику, камин и хранение в единую стеновую панель с мягкой подсветкой.</p><p class="text-camel text-xs font-sans">Шпон дуба, искусственный камень, металл</p></div></div></div></div></section>
+
+      <section id="materials" class="relative z-10 py-24 lg:py-32 section-soft-shadow"><div class="container mx-auto px-4 lg:px-8"><div class="grid lg:grid-cols-2 gap-16 items-center mb-16"><div><p class="text-bronze text-sm tracking-[0.2em] uppercase mb-4 font-sans">Материалы</p><h2 class="font-serif text-3xl lg:text-4xl font-semibold text-graphite mb-6">Материалы, которые выглядят дорого не только в день установки</h2><p class="text-graphite/60 text-lg font-sans leading-relaxed">Покажем сочетания фасадов, столешниц, ручек и фактур так, чтобы интерьер был собранным и долговечным.</p></div><div class="rounded-lg overflow-hidden"><img src="assets/images/hero/materials-hero.jpg" alt="Образцы материалов" loading="lazy" class="w-full h-auto object-cover"></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="bg-sand/40 border border-bronze/10 rounded-lg p-6"><h3 class="font-serif text-base font-semibold text-graphite mb-2">МДФ в эмали</h3><p class="text-sm text-graphite/55 font-sans leading-relaxed">Гладкие фасады любого цвета с износостойким покрытием.</p></div><div class="bg-sand/40 border border-bronze/10 rounded-lg p-6"><h3 class="font-serif text-base font-semibold text-graphite mb-2">Шпон натурального дерева</h3><p class="text-sm text-graphite/55 font-sans leading-relaxed">Тактильная красота древесины на современных конструкциях.</p></div><div class="bg-sand/40 border border-bronze/10 rounded-lg p-6"><h3 class="font-serif text-base font-semibold text-graphite mb-2">Компакт-ламинат</h3><p class="text-sm text-graphite/55 font-sans leading-relaxed">Сверхпрочные поверхности для кухонь и влажных зон.</p></div><div class="bg-sand/40 border border-bronze/10 rounded-lg p-6"><h3 class="font-serif text-base font-semibold text-graphite mb-2">Искусственный камень</h3><p class="text-sm text-graphite/55 font-sans leading-relaxed">Бесшовные столешницы с тёплой тактильностью.</p></div></div></div></section>
+
+
+        <section id="how-we-work" class="relative z-10 py-24 lg:py-32 process-section"><div class="container mx-auto px-4 lg:px-8"><div class="text-center mb-16"><p class="text-bronze text-sm tracking-[0.2em] uppercase mb-4 font-sans">Процесс</p><h2 class="font-serif text-3xl lg:text-5xl font-semibold text-graphite">Как мы работаем</h2></div><div class="max-w-4xl mx-auto space-y-8"><div class="flex gap-6 items-start"><div class="w-12 h-12 rounded-full bg-linen border-2 border-camel flex items-center justify-center flex-shrink-0"><span class="font-serif text-sm font-bold text-camel">01</span></div><div><h3 class="font-serif text-lg font-semibold text-graphite mb-1">Заявка и короткий бриф</h3><p class="text-graphite/60 text-sm font-sans">Обсуждаем задачу, пожелания, сроки и бюджет.</p></div></div><div class="flex gap-6 items-start"><div class="w-12 h-12 rounded-full bg-linen border-2 border-camel flex items-center justify-center flex-shrink-0"><span class="font-serif text-sm font-bold text-camel">02</span></div><div><h3 class="font-serif text-lg font-semibold text-graphite mb-1">Бесплатный замер</h3><p class="text-graphite/60 text-sm font-sans">Фиксируем все размеры и технические нюансы помещения.</p></div></div><div class="flex gap-6 items-start"><div class="w-12 h-12 rounded-full bg-linen border-2 border-camel flex items-center justify-center flex-shrink-0"><span class="font-serif text-sm font-bold text-camel">03</span></div><div><h3 class="font-serif text-lg font-semibold text-graphite mb-1">Концепция и смета</h3><p class="text-graphite/60 text-sm font-sans">Показываем решение, материалы и итоговую стоимость.</p></div></div><div class="flex gap-6 items-start"><div class="w-12 h-12 rounded-full bg-linen border-2 border-camel flex items-center justify-center flex-shrink-0"><span class="font-serif text-sm font-bold text-camel">04</span></div><div><h3 class="font-serif text-lg font-semibold text-graphite mb-1">Производство и монтаж</h3><p class="text-graphite/60 text-sm font-sans">Изготавливаем, доставляем и аккуратно устанавливаем мебель на объекте.</p></div></div></div></div></section>
+
+      <section id="reviews" class="relative z-10 py-24 lg:py-32 bg-sand/30 section-soft-shadow"><div class="container mx-auto px-4 lg:px-8"><div class="text-center mb-16"><p class="text-bronze text-sm tracking-[0.2em] uppercase mb-4 font-sans">Отзывы</p><h2 class="font-serif text-3xl lg:text-4xl font-semibold text-graphite">Нас выбирают не за обещания, а за результат</h2></div><div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12"><div class="bg-linen border border-bronze/10 rounded-lg p-8"><p class="text-graphite/70 text-sm font-sans leading-relaxed mb-6 italic">«Кухня стала центром дома и выглядит именно так, как мы хотели.»</p><div class="border-t border-bronze/10 pt-4"><p class="font-serif text-base font-semibold text-graphite">Анна и Дмитрий</p><p class="text-xs text-bronze font-sans">Кухня и гостиная</p></div></div><div class="bg-linen border border-bronze/10 rounded-lg p-8"><p class="text-graphite/70 text-sm font-sans leading-relaxed mb-6 italic">«Всё продумано до мелочей: от хранения до подсветки.»</p><div class="border-t border-bronze/10 pt-4"><p class="font-serif text-base font-semibold text-graphite">Елена</p><p class="text-xs text-bronze font-sans">Гардеробная</p></div></div><div class="bg-linen border border-bronze/10 rounded-lg p-8"><p class="text-graphite/70 text-sm font-sans leading-relaxed mb-6 italic">«Монтаж прошёл спокойно, без хаоса и грязи.»</p><div class="border-t border-bronze/10 pt-4"><p class="font-serif text-base font-semibold text-graphite">Сергей и Ольга</p><p class="text-xs text-bronze font-sans">Вся мебель в квартире</p></div></div></div></div></section>
+
+      <section id="faq" class="relative z-10 py-24 lg:py-32 section-soft-shadow"><div class="container mx-auto px-4 lg:px-8 max-w-3xl"><div class="text-center mb-16"><p class="text-bronze text-sm tracking-[0.2em] uppercase mb-4 font-sans">Вопросы</p><h2 class="font-serif text-3xl lg:text-4xl font-semibold text-graphite">Частые вопросы</h2></div><div class="space-y-3 faq-list" data-accordion="single"><article class="bg-sand/30 border border-bronze/10 rounded-lg px-6 faq-item" data-open="true"><button type="button" class="font-serif text-base font-semibold text-graphite py-5 faq-trigger" aria-expanded="true"><span>Сколько стоит мебель на заказ?</span><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9l6 6 6-6"/></svg></button><div class="text-graphite/60 text-sm font-sans leading-relaxed pb-5 faq-content">Стоимость зависит от объёма проекта, материалов и сложности конструкций.</div></article><article class="bg-sand/30 border border-bronze/10 rounded-lg px-6 faq-item"><button type="button" class="font-serif text-base font-semibold text-graphite py-5 faq-trigger" aria-expanded="false"><span>Какие сроки изготовления?</span><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9l6 6 6-6"/></svg></button><div class="text-graphite/60 text-sm font-sans leading-relaxed pb-5 faq-content" hidden>Обычно от 3 до 6 недель, в зависимости от проекта.</div></article><article class="bg-sand/30 border border-bronze/10 rounded-lg px-6 faq-item"><button type="button" class="font-serif text-base font-semibold text-graphite py-5 faq-trigger" aria-expanded="false"><span>Замер действительно бесплатный?</span><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9l6 6 6-6"/></svg></button><div class="text-graphite/60 text-sm font-sans leading-relaxed pb-5 faq-content" hidden>Да, замер бесплатный и ни к чему не обязывает.</div></article></div></div></section>
+
+      <section id="contacts" class="relative z-10 py-24 lg:py-32 bg-sand/30 section-soft-shadow"><div class="container mx-auto px-4 lg:px-8"><div class="text-center mb-16"><p class="text-bronze text-sm tracking-[0.2em] uppercase mb-4 font-sans">Контакты</p><h2 class="font-serif text-3xl lg:text-4xl font-semibold text-graphite">Свяжитесь с нами</h2></div><div class="grid lg:grid-cols-2 gap-12"><div class="space-y-8"><div><p class="font-serif text-base font-semibold text-graphite mb-1">Адрес</p><p class="text-sm text-graphite/60 font-sans">г. Москва, ул. Мебельная, д. 12, стр. 3</p><p class="text-sm text-graphite/60 font-sans">Шоурум и производство</p></div><div><p class="font-serif text-base font-semibold text-graphite mb-1">Часы работы</p><p class="text-sm text-graphite/60 font-sans">Пн–Пт: 9:00–19:00</p><p class="text-sm text-graphite/60 font-sans">Сб: 10:00–16:00</p></div><div><p class="font-serif text-base font-semibold text-graphite mb-1">Телефон</p><a href="tel:+74951234567" class="text-sm text-camel font-sans contact-link">+7 (495) 123-45-67</a></div><div><p class="font-serif text-base font-semibold text-graphite mb-1">Email</p><a href="mailto:info@mebel-atelier.ru" class="text-sm text-camel font-sans contact-link">info@mebel-atelier.ru</a></div><div class="contacts-socials"><p class="font-serif text-base font-semibold text-graphite mb-1">Соцсети</p><div class="contacts-socials-list" data-social-links><a href="https://t.me/" target="_blank" rel="noreferrer" class="contacts-social-link">Telegram</a><a href="https://wa.me/" target="_blank" rel="noreferrer" class="contacts-social-link">WhatsApp</a><a href="https://max.ru/" target="_blank" rel="noreferrer" class="contacts-social-link">MAX</a></div></div></div><div class="bg-sand/50 rounded-lg h-80 lg:h-auto flex items-center justify-center border border-bronze/10"><div class="text-center"><p class="text-sm text-graphite/40 font-sans">Интерактивная карта</p><p class="text-xs text-graphite/30 font-sans mt-1">Подключите Яндекс Карты или 2ГИС при необходимости.</p></div></div></div></div></section>
+    </main>
+
+    <footer class="relative z-10 bg-walnut py-16 lg:py-20">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          <div><div class="site-brand footer-brand"><span class="site-brand-badge" aria-hidden="true">MA</span></div><p class="text-sand/50 text-sm font-sans leading-relaxed">Собираем пространство под образ жизни. Мебель на заказ в тёплой интерьерной эстетике.</p></div>
+          <div><h4 class="font-serif text-base font-semibold text-linen mb-4">Направления</h4><ul class="space-y-2"><li><a href="#why-us" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Кухни</a></li><li><a href="#why-us" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Шкафы и гардеробные</a></li><li><a href="#why-us" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Гостиные и ТВ-зоны</a></li><li><a href="#why-us" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Прихожие</a></li><li><a href="#why-us" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Детские</a></li><li><a href="#why-us" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Индивидуальные проекты</a></li></ul></div>
+          <div><h4 class="font-serif text-base font-semibold text-linen mb-4">Компания</h4><ul class="space-y-2"><li><a href="#why-us" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">О компании</a></li><li><a href="#portfolio" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Портфолио</a></li><li><a href="#materials" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Материалы</a></li><li><a href="#reviews" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Отзывы</a></li><li><a href="#contacts" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Контакты</a></li></ul></div>
+          <div><h4 class="font-serif text-base font-semibold text-linen mb-4">Информация</h4><ul class="space-y-2"><li><a href="#how-we-work" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Этапы работы</a></li><li><a href="#contacts" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Оплата и рассрочка</a></li><li><a href="#contacts" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Доставка и монтаж</a></li><li><a href="#faq" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Гарантия</a></li><li><a href="#contacts" class="text-sm text-sand/50 hover:text-sand transition-colors font-sans footer-link">Контакты</a></li></ul></div>
+        </div>
+        <div class="bronze-line mb-8"></div>
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4"><p class="text-sand/30 text-xs font-sans">© <span id="year"></span> MA. Все права защищены.</p><div class="flex gap-6 footer-policy"><a href="#" class="text-sand/30 text-xs font-sans hover:text-sand/60 transition-colors footer-link">Политика конфиденциальности</a><a href="#" class="text-sand/30 text-xs font-sans hover:text-sand/60 transition-colors footer-link">Пользовательское соглашение</a></div></div>
+      </div>
+    </footer>
+    <button type="button" class="back-to-top" aria-label="Наверх">
+      <span class="back-to-top-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 17V7"/>
+          <path d="m7 12 5-5 5 5"/>
+        </svg>
+      </span>
+      <span class="back-to-top-label">Наверх</span>
+    </button>
+
+    <script src="app/js/site-config.js?v=20260426-1200"></script>
+    <script src="app/js/site.js?v=20260426-1200"></script>
+  </body>
+</html>

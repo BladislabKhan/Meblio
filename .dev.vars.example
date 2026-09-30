@@ -1,0 +1,7 @@
+﻿TURNSTILE_SECRET_KEY=your_turnstile_secret_key
+LEADS_WEBHOOK_URL=https://example.com/webhook
+LEAD_MIN_FILL_MS=3000
+TWOGIS_API_KEY=your_2gis_api_key
+
+# Shared analytics uses a KV binding named ANALYTICS.
+# Configure it in Cloudflare Pages or Workers settings.

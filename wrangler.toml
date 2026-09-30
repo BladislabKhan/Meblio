@@ -1,0 +1,8 @@
+﻿name = "mebel-atelier-site"
+compatibility_date = "2026-04-11"
+pages_build_output_dir = "."
+
+# Add this binding in Cloudflare Pages or Workers before enabling shared analytics.
+# [[kv_namespaces]]
+# binding = "ANALYTICS"
+# id = "your_kv_namespace_id"

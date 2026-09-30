@@ -1,0 +1,10 @@
+﻿.reveal-on-scroll{opacity:0;transform:translateY(24px) scale(.985);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.reveal-on-scroll.is-visible{opacity:1;transform:translateY(0) scale(1)}
+.portfolio-lightbox{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:2rem;background:rgba(20,12,8,.72);backdrop-filter:blur(14px);opacity:0;pointer-events:none;transition:opacity .3s ease}
+.portfolio-lightbox.is-open{opacity:1;pointer-events:auto}
+.portfolio-lightbox-dialog{position:relative;width:min(92vw,1100px);padding:1rem;border-radius:1.8rem;background:rgba(255,250,245,.92);box-shadow:0 32px 80px rgba(16,10,7,.36);transform:translateY(20px) scale(.98);transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.portfolio-lightbox.is-open .portfolio-lightbox-dialog{transform:translateY(0) scale(1)}
+.portfolio-lightbox-image{width:100%;max-height:82vh;border-radius:1.2rem;object-fit:cover}
+.portfolio-lightbox-close{position:absolute;top:1.4rem;right:1.4rem;display:inline-flex;align-items:center;justify-content:center;width:2.8rem;height:2.8rem;border-radius:999px;background:rgba(36,23,17,.78);color:#fff7f2;font-size:1.4rem}
+
+

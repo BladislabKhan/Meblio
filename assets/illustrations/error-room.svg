@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Минималистичная мебельная композиция</title>
+  <desc id="desc">Диван, полка, торшер и пустая рама в теплых интерьерных оттенках.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff9f3"/>
+      <stop offset="1" stop-color="#efe0d2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#6c4a36" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="720" height="520" rx="38" fill="url(#wall)"/>
+  <path d="M96 405h528" stroke="#d7bfa8" stroke-width="3" stroke-linecap="round"/>
+  <g filter="url(#shadow)">
+    <path d="M178 304h264a54 54 0 0 1 54 54v46H142v-64a36 36 0 0 1 36-36Z" fill="#9c7353"/>
+    <path d="M183 256h84a42 42 0 0 1 42 42v106H142V297a41 41 0 0 1 41-41Z" fill="#b88b68"/>
+    <path d="M306 256h118a72 72 0 0 1 72 72v76H276V286a30 30 0 0 1 30-30Z" fill="#caa27e"/>
+    <path d="M166 404v37M471 404v37" stroke="#5c3d2e" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#6b4a38" stroke-width="7" stroke-linecap="round">
+    <path d="M522 404V204"/>
+    <path d="M475 204h94"/>
+    <path d="M498 204c0-35 48-35 48 0"/>
+  </g>
+  <path d="M476 224h92l-19 52h-54l-19-52Z" fill="#ddc2a5"/>
+  <g filter="url(#shadow)">
+    <rect x="116" y="111" width="172" height="102" rx="8" fill="#fffaf5" stroke="#d2b8a0" stroke-width="4"/>
+    <path d="M143 187c32-42 51-45 79-13 18-22 34-26 49 13" stroke="#b88662" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <g>
+    <path d="M378 126h164" stroke="#7a543f" stroke-width="10" stroke-linecap="round"/>
+    <rect x="396" y="84" width="36" height="41" rx="5" fill="#c1814a"/>
+    <rect x="453" y="95" width="58" height="30" rx="6" fill="#f2e1cf" stroke="#d0b397" stroke-width="3"/>
+  </g>
+  <circle cx="602" cy="132" r="21" fill="#b98966" opacity=".9"/>
+</svg>
